@@ -5,30 +5,30 @@ import java.util.ArrayList;
 public class Ex01 {
 public static void main(String[] args) {
 	/*
-	 ÄÃ·º¼Ç ÇÁ·¹ÀÓ ¿öÅ©
-	 ÄÃ·º¼Ç
-	 - ´Ù¼öÀÇ µ¥ÀÌÅÍ, µ¥ÀÌÅÍ ±×·ì
-	 -¹«ÇÑÇÑ µ¥ÀÌÅÍÀÇ ÁıÇÕ - ÀÚ¹ÙÀÇ ÀÚ·á±¸Á¶
-	 ÇÁ·¹ÀÓ ¿öÅ©
-	 - ÇÏ³ªÀÇ Æ²
-	 -Ç¥ÁØÈ­µÈ ÇÁ·Î±×·¡¹Ö ¹æ½Ä
+	 ì»¬ë ‰ì…˜ í”„ë ˆì„ ì›Œí¬
+	 ì»¬ë ‰ì…˜
+	 - ë‹¤ìˆ˜ì˜ ë°ì´í„°, ë°ì´í„° ê·¸ë£¹
+	 -ë¬´í•œí•œ ë°ì´í„°ì˜ ì§‘í•© - ìë°”ì˜ ìë£Œêµ¬ì¡°
+	 í”„ë ˆì„ ì›Œí¬
+	 - í•˜ë‚˜ì˜ í‹€
+	 -í‘œì¤€í™”ëœ í”„ë¡œê·¸ë˜ë° ë°©ì‹
 	 List, set, Map
-	 List(ºÎ¸ğ)
+	 List(ë¶€ëª¨)
 	 - ArrayList
 	 - LinkedList
 	 - Stack...
 	 
 	 ArrayList
-	 -¼ø¼­¸¦ À¯ÁöÇÑ´Ù.
-	 -µ¥ÀÌÅÍÀÇ Áßº¹À» Çã¿ëÇÑ´Ù.
+	 -ìˆœì„œë¥¼ ìœ ì§€í•œë‹¤.
+	 -ë°ì´í„°ì˜ ì¤‘ë³µì„ í—ˆìš©í•œë‹¤.
 	 */
-	ArrayList arr = new ArrayList(); //Å¬·¡½º ÇüÅÂ·Î º¯¼ö¸¦ ¸¸µé¸é º¯¼ö¸¦ °´Ã¼¶ó°í ÇÔ
-	arr.add("123");					 //°´Ã¼Çü º¯¼öµéÀº ±â´ÉµéÀÌ Á¦°øµÊ
+	ArrayList arr = new ArrayList(); //í´ë˜ìŠ¤ í˜•íƒœë¡œ ë³€ìˆ˜ë¥¼ ë§Œë“¤ë©´ ë³€ìˆ˜ë¥¼ ê°ì²´ë¼ê³  í•¨
+	arr.add("123");					 //ê°ì²´í˜• ë³€ìˆ˜ë“¤ì€ ê¸°ëŠ¥ë“¤ì´ ì œê³µë¨
 	arr.add("456");
 	System.out.println(arr.get(0));
-	System.out.println(arr.get(1));//ArrayList¿¡ ÀúÀåµÈ °ªÀ» °¡Á®¿È
+	System.out.println(arr.get(1));//ArrayListì— ì €ì¥ëœ ê°’ì„ ê°€ì ¸ì˜´
 	
-	int s =arr.size();//ArrayList¿¡ ÀúÀåµÈ °¹¼ö¸¦ ¾ò¾î¿È
+	int s =arr.size();//ArrayListì— ì €ì¥ëœ ê°¯ìˆ˜ë¥¼ ì–»ì–´ì˜´
 	System.out.println(s);
 	
 	int[] a = new int[3];
@@ -36,10 +36,10 @@ public static void main(String[] args) {
 	
 	boolean bool = arr.contains("123");
 	if(bool == true) {
-		System.out.println("123Àº Á¸ÀçÇÕ´Ï´Ù");
+		System.out.println("123ì€ ì¡´ì¬í•©ë‹ˆë‹¤");
 	}
 	
-	System.out.println(bool); //ArrayList¿¡ ÀúÀåµÈ °ªÀ¸¸é true ¾Æ´Ï¸é false
+	System.out.println(bool); //ArrayListì— ì €ì¥ëœ ê°’ìœ¼ë©´ true ì•„ë‹ˆë©´ false
 	System.out.println(arr.contains("12311"));
 	
 	System.out.println(arr.remove("123"));
@@ -48,13 +48,13 @@ public static void main(String[] args) {
 	arr.clear();
 	System.out.println(arr.size());
 	
-	arr.add("¶ó¸é"); arr.add("¼Ò±İ");
-	arr.add("¼ø´ë");
-	String index = "¼Ò±İ";
+	arr.add("ë¼ë©´"); arr.add("ì†Œê¸ˆ");
+	arr.add("ìˆœëŒ€");
+	String index = "ì†Œê¸ˆ";
 	int i = arr.indexOf(index);
-	System.out.println(i+"¹øÂ° Á¸ÀçÇÔ");
-	System.out.println("º¯°æ Àü : "+arr.get(1));
-	arr.set(i, "±İ±İ");
-	System.out.println("º¯°æ ÈÄ : "+arr.get(1));
+	System.out.println(i+"ë²ˆì§¸ ì¡´ì¬í•¨");
+	System.out.println("ë³€ê²½ ì „ : "+arr.get(1));
+	arr.set(i, "ê¸ˆê¸ˆ");
+	System.out.println("ë³€ê²½ í›„ : "+arr.get(1));
 }
 }

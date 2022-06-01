@@ -12,57 +12,57 @@ public class Quiz01 {
 		int num, temp=0;
 		String name=null, phNum=null;
 		while(true) {
-			System.out.println("1.¿¬¶ôÃ³ µî·Ï");
-			System.out.println("2.¿¬¶ôÃ³ º¸±â");
-			System.out.println("3.¿¬¶ôÃ³ »èÁ¦");
-			System.out.println("4.¸ğµç ¿¬¶ôÃ³ º¸±â");
-			System.out.println("5.Á¾·á");
+			System.out.println("1.ì—°ë½ì²˜ ë“±ë¡");
+			System.out.println("2.ì—°ë½ì²˜ ë³´ê¸°");
+			System.out.println("3.ì—°ë½ì²˜ ì‚­ì œ");
+			System.out.println("4.ëª¨ë“  ì—°ë½ì²˜ ë³´ê¸°");
+			System.out.println("5.ì¢…ë£Œ");
 			System.out.println(">>> : ");
 			num = sc.nextInt();
 			switch(num) {
 			case 1 : 
 				while(true) {
-				System.out.println("ÀÌ¸§ ÀÔ·Â");
+				System.out.println("ì´ë¦„ ì…ë ¥");
 				name = sc.next();
 				if(nameArr.indexOf(name) == -1) {
 					break;
 				}
-				System.out.println("Á¸ÀçÇÏ´Â ÀÌ¸§. ´Ù½Ã.");
+				System.out.println("ì¡´ì¬í•˜ëŠ” ì´ë¦„. ë‹¤ì‹œ.");
 			}
-				System.out.println("ÀüÈ­¹øÈ£ ÀÔ·Â");
+				System.out.println("ì „í™”ë²ˆí˜¸ ì…ë ¥");
 				phNum = sc.next();
 				nameArr.add(name);
 				numArr.add(phNum);
-				System.out.println("ÀúÀå ¿Ï·á");
+				System.out.println("ì €ì¥ ì™„ë£Œ");
 				break;
 			case 2 : 
-				System.out.println("ÀÌ¸§ ÀÔ·Â");
+				System.out.println("ì´ë¦„ ì…ë ¥");
 				name = sc.next();
 				temp = nameArr.indexOf(name);
 				if(temp == -1) {
-					System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â Á¤º¸ ÀÔ´Ï´Ù.");
+					System.out.println("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì •ë³´ ì…ë‹ˆë‹¤.");
 				}else {
-					System.out.println("ÀÌ¸§ : " +name);
-					System.out.println("ÀüÈ­¹øÈ£ : "+
+					System.out.println("ì´ë¦„ : " +name);
+					System.out.println("ì „í™”ë²ˆí˜¸ : "+
 										numArr.get(temp));
 				}
 				break;
 			case 3 : 
-				System.out.println("ÀÌ¸§ ÀÔ·Â");
+				System.out.println("ì´ë¦„ ì…ë ¥");
 				name = sc.next();
 				temp = nameArr.indexOf(name);
 				if(temp == -1) {
-					System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â Á¤º¸ ÀÔ´Ï´Ù.");
+					System.out.println("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì •ë³´ ì…ë‹ˆë‹¤.");
 				}else {
 					//nameArr.remove(temp);
 					nameArr.remove(name);
 					//numArr.remove(temp);
 					numArr.remove(numArr.get(temp));
-					System.out.println("»èÁ¦ ¿Ï·á");
+					System.out.println("ì‚­ì œ ì™„ë£Œ");
 				}
 				break;
 			case 4 : 
-					System.out.println("ÀÌ¸§\tÀüÈ­¹øÈ£");
+					System.out.println("ì´ë¦„\tì „í™”ë²ˆí˜¸");
 					System.out.println("===============");
 				for(int i = 0; i <numArr.size(); i++) {
 					System.out.println(nameArr.get(i)+"\t");
@@ -71,7 +71,7 @@ public class Quiz01 {
 				}
 				break;
 			case 5 : 
-				System.exit(1); //ÇÁ·Î±×·¥ °­Á¦ Á¾·á
+				System.exit(1); //í”„ë¡œê·¸ë¨ ê°•ì œ ì¢…ë£Œ
 			}
 		}
 }
